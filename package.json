@@ -11,7 +11,9 @@
     "lint:fix": "./node_modules/.bin/eslint . --fix",
     "prettier": "./node_modules/.bin/prettier --write '*.js'",
     "format-code": "yarn run prettier && yarn run lint:fix",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "postinstall": "react-native upgrade",
+    "preinstall": "yarn config set 'strict-ssl' false"
   },
   "lint-staged": {
     "*.js": ["yarn run format-code", "git add"]
