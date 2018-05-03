@@ -55,9 +55,5 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-# OS Folders
-android
-ios
-
 # Junk
 .vscode/
