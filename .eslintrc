@@ -1,0 +1,22 @@
+{
+    "parser": "babel-eslint",
+    "extends": [
+        "airbnb",
+        "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+        "flowtype"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [".js", ".jsx"]
+            }
+        ],
+        "import/no-named-as-default": "off",
+        "import/no-named-as-default-member": "off",
+        "indent": ["error", 4],
+        "react/jsx-indent": ["error", 4]
+    }
+}
