@@ -1,0 +1,3 @@
+rootProject.name = 'waterDrop'
+
+include ':app'

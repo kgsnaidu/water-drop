@@ -5,13 +5,14 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "./node_modules/.bin/react-native run-android",
+    "ios": "./node_modules/.bin/react-native run-ios",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix",
     "prettier": "./node_modules/.bin/prettier --write '*.js'",
     "format-code": "yarn run prettier && yarn run lint:fix",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "preinstall": "yarn config set 'strict-ssl' false"
   },
   "lint-staged": {
     "*.js": ["yarn run format-code", "git add"]
