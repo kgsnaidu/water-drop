@@ -13,7 +13,8 @@ const instructions = Platform.select({
         'Double tap R on your keyboard to reload,\n' +
         'Shake or press menu button for dev menu',
 });
-
+const motive =
+    'This is a intiative water can app for learning pupose. not in use';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -50,9 +51,7 @@ export default class App extends Component<Props, State> {
         return (
             <View style={styles.container}>
                 <Text style={styles.welcome}>Welcome to {this.state.name}</Text>
-                <Text style={styles.instructions}>
-                    To get started, edit App.js
-                </Text>
+                <Text style={styles.instructions}>{motive}</Text>
                 <Text style={styles.instructions}>{instructions}</Text>
             </View>
         );
